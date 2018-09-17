@@ -51,7 +51,7 @@ class SluggerService extends Component
 	 *
 	 * @return string|$encodedId the encoded ID
 	 */
-	public function encodeById($id,$settings)
+	public function encodeById($id, $settings)
 	{
 		
 		if ( $settings['length'] ) 
@@ -65,6 +65,8 @@ class SluggerService extends Component
 
 	public function decode($hash)
 	{
+		$length = strlen($hash);
+		$this->encoder = new \Hashids\Hashids($this->salt, $length, $this->alphabet);
 		$id = $this->encoder->decode($hash);
 		return reset($id);
 	}

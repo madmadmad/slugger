@@ -47,6 +47,6 @@ class SluggerVariable
      */
     public function decode($hash)
     {
-        return craft()->slugger->decode($hash);
+		return Slugger::$plugin->SluggerService->decode($hash);
     }
 }
