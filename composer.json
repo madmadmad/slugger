@@ -1,0 +1,40 @@
+{
+    "name": "madhouse/slugger",
+    "description": "Hashes the Id of an entry when it is saved and replaces the slug.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "slugger"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Madhouse",
+            "homepage": "https://madmadmad.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "hashids/hashids": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "madhouse\\slugger\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Slugger",
+        "handle": "slugger",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/madmadmad/slugger/master/CHANGELOG.md",
+        "components": {
+            "sluggerService": "madhouse\\slugger\\services\\SluggerService"
+        },
+        "class": "madhouse\\slugger\\Slugger"
+    }
+}
