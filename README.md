@@ -4,7 +4,7 @@ Slugger is a Craft plugin that hashes the Id of an entry when it is saved and re
 
 This plugin uses the [Hashids](http://hashids.org/php/) library to generate the slugs.
 
-This plugin copies heavily from Alec Ritson's [Slugged](https://github.com/alecritson) plugin for Craft 2. Thanks, Alec. (The section override works in this version. :smiley:)
+This plugin copies heavily from Alec Ritson's [Slugged](https://github.com/alecritson) plugin for Craft 2. Thanks, Alec. :smiley: (The section override works in this version btw.)
 
 ## Requirements
 
@@ -14,9 +14,6 @@ This plugin requires Craft CMS 3.0.0 or later.
 
 Visit the Plugin Store in your Craft 3 control panel. It costs nothing.
 
-## Slugger Overview
-
--Insert text here-
 
 ## Configuration 
 All configuration is done in the plugin settings page in the admin area. 
@@ -56,6 +53,6 @@ You can decode the hash using the `decode` template variable.
 
 ## Support, issues, feedback
 
-If you experience any problems please create a new issue here on the Repo.
+If you experience any problems please create a new issue here on the repo.
 
 Brought to you by [Madhouse](madmadmad.com)
