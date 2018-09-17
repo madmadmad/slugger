@@ -45,7 +45,7 @@ You can decode the hash using the `decode` template variable.
 
 ```
   {# get the hash value from the url #}
-  {% set hash = craft.request.segment(2) %}
+  {% set hash = craft.app.request.getSegment(2) %}
     
   {# use slugger’s decode method to get the ID #}
   {% set entryId = craft.slugger.decode(hash) %}
