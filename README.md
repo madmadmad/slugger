@@ -12,19 +12,8 @@ This plugin requires Craft CMS 3.0.0 or later.
 
 ## Installation
 
-Visit the Plugin Store in your Craft 3 control panel and install from there. Slugger costs nothing.
+Visit the Plugin Store in your Craft 3 control panel. It costs nothing.
 
-Or...
-
-1. Open your terminal and go to your Craft project:
-
-        cd /path/to/project
-
-2. Then tell Composer to load the plugin:
-
-        composer require madhouse/slugger
-
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Slugger.
 
 ## Configuration 
 All configuration is done in the plugin settings page in the admin area. 
