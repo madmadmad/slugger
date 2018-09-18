@@ -60,9 +60,7 @@ class Slugger extends Plugin
     {
         parent::init();
         self::$plugin = $this;
-        
-        require_once 'vendor/autoload.php';
-        
+                
         $this->setComponents([
 			'SluggerService' => services\SluggerService::class,
 		]);
