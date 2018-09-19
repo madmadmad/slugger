@@ -86,8 +86,8 @@ class Slugger extends Plugin
         
        Event::on(Elements::class, Elements::EVENT_AFTER_SAVE_ELEMENT, function(Event $event){
         
-            // Only hash if new entry
-            if ($event->isNew)
+            // Only hash if element is entry and new entry
+            if ( ($event->element instanceof \craft\elements\Entry) && $event->isNew )
             {
             
                 // Get the settings
