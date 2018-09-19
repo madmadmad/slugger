@@ -2,7 +2,7 @@
     "name": "madhouse/slugger",
     "description": "Hashes the Id of an entry when it is saved and replaces the slug.",
     "type": "craft-plugin",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "keywords": [
         "craft",
         "cms",
