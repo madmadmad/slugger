@@ -20,6 +20,7 @@ use craft\services\Plugins;
 use craft\events\PluginEvent;
 use craft\services\Elements;
 use craft\web\twig\variables\CraftVariable;
+use craft\helpers\ElementHelper;
 
 use yii\base\Event;
 
@@ -85,9 +86,9 @@ class Slugger extends Plugin
         );
         
        Event::on(Elements::class, Elements::EVENT_AFTER_SAVE_ELEMENT, function(Event $event){
-        
+
             // Only hash if element is entry and new entry
-            if ( ($event->element instanceof \craft\elements\Entry) && $event->isNew )
+            if ( ($event->element instanceof \craft\elements\Entry) && $event->isNew && !ElementHelper::isDraftOrRevision($event->element) )
             {
             
                 // Get the settings
