@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ## 1.0.4 - 2021-03-19
 ### Fixed
 - Check for also the draft or revision status of an entry when slugging. thx @moldedjelly
-- 
+
 - ## 1.0.3 - 2020-10-26
 ### Changed
 - Fix Composer 2 compatibility.
