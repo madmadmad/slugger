@@ -4,7 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## 1.0.3 - 2020-10-26
+## 1.0.4 - 2021-10-26
+### Fixed
+- Check for also the draft or revision status of an entry when slugging. thx @moldedjelly
+- 
+- ## 1.0.3 - 2020-10-26
 ### Changed
 - Fix Composer 2 compatibility.
 
