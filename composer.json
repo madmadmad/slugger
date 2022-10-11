@@ -17,7 +17,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0-RC1",
+        "craftcms/cms": "^3.0.0",
         "hashids/hashids": "^2.0"
     },
     "autoload": {
