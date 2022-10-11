@@ -35,5 +35,11 @@
             "sluggerService": "madhouse\\slugger\\services\\SluggerService"
         },
         "class": "madhouse\\slugger\\Slugger"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }
